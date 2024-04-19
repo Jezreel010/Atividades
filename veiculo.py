@@ -3,11 +3,10 @@ class Veiculo:
         self.marca = marca
         self.modelo = modelo
         
-def frear(self):
-    print(f"{self.marca} está freando")
-
-def  acelerar(self):
-    print(f"O {self.marca} está acelerando")
+    def frear(self):
+        print(f"{self.marca} está freando")
+    def  acelerar(self):
+        print(f"O {self.marca} está acelerando")
 
 class Carro(Veiculo):
     def __init__(self, marca, modelo, cor):
