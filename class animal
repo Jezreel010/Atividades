@@ -1,0 +1,24 @@
+class Animal:
+    def __init__(self, nome):
+        self.nome = nome
+
+def fazer_som(self):
+    print (f"{self.nome} faz algum som.")
+
+class Cachorro(Animal):
+    def __init__(self, nome, raca):
+        super().__init__(nome)
+        self.raca = raca
+
+    def fazer_som(self):
+        print("O  cachorro faz au au")
+
+# Criando uma instância da classe Animal
+animal_generico = Animal(input("Digite o nome de um Animal: "))
+
+# Criando uma instância da classe Cachorro
+cachorro1 = Cachorro("Rex", "Labrador")
+
+# Acessando métodos das classes
+animal_generico.fazer_som() # Saìda: O animal faz algum som.
+cachorro1.fazer_som()  # Saída: O cachorro faz au au!
